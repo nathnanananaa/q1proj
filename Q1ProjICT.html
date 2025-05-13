@@ -1,0 +1,214 @@
+
+<!-- saved from url=(0102)https://storage.googleapis.com/oa_disk001/obfairview/67/classfeed/2900/submissions/1728266777-920.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolls Royce</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            color: #333;
+            overflow: hidden;
+        }
+        .landing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: opacity 0.5s ease;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('https://www.rolls-roycemotorcars.com/content/dam/rollsroyce/brand/images/home/2022_RR_Brand_Image.jpg') no-repeat center center/cover;
+        }
+        .logo {
+            max-width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .enter-text {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+        #main {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            padding: 20px;
+            background-color: #fff;
+            height: 100%;
+            overflow: auto;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 0;
+            margin: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .logo-header {
+            max-width: 200px;
+            margin: auto;
+        }
+        .car-info {
+            margin: 200px auto;
+            width: 80%;
+            font-size: 1.1em;
+            line-height: 1.8;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #444;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #444;
+            text-align: center;
+        }
+        .model-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .model-item {
+            width: 250px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .model-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .model-item img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.3s;
+        }
+        .model-item img:hover {
+            transform: scale(1.05);
+        }
+        .model-item p {
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #000;
+            text-align: center;
+        }
+        .price-tag {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .credit-info {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 0.9em;
+            text-align: center;
+            color: #777;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #444;
+        }
+        @media (max-width: 768px) {
+            .model-item {
+                width: 90%;
+            }
+        }
+    </style>
+    <script>
+        function enterSite() {
+            const landing = document.getElementById('landing');
+            const main = document.getElementById('main');
+            
+            landing.style.opacity = '0';
+            setTimeout(() => {
+                landing.style.display = 'none';
+                main.style.display = 'block';
+                setTimeout(() => {
+                    main.style.opacity = '1';
+                }, 50);
+            }, 500);
+        }
+    </script>
+</head>
+<body>
+
+    <div id="landing" class="landing">
+        <img class="logo" src="file:///E:/rrlogo.png" alt="Rolls Royce Logo" onclick="enterSite()">
+    </div>
+
+    <div id="main">
+        <header>
+            <img class="logo-header" src="file:///E:/rrlogo.png" alt="Rolls Royce Logo">
+        </header>
+
+        <p class="car-info">
+            Rolls Royce is the definition of speed, luxury, and elegance. Founded in 1904, the brand has become a symbol of wealth in the automotive world. Each vehicle is handcrafted to perfection, featuring the finest materials like carbon fiber, real Italian leather and cutting-edge technology.
+        </p>
+
+        <h2>Models</h2>
+        <div class="model-list">
+            <div class="model-item">
+                <img src="./Q1ProjICT_files/2024_24.png" alt="Ghost">
+                <p>Ghost</p>
+                <div class="price-tag">Starts at ₱42,000,000</div>
+            </div>
+            <div class="model-item">
+                <img src="./Q1ProjICT_files/2021_76.png" alt="Phantom">
+                <p>Phantom</p>
+                <div class="price-tag">Starts at ₱28,000,000</div>
+            </div>
+            <div class="model-item">
+                <img src="./Q1ProjICT_files/spectre-1.png" alt="Spectre">
+                <p>Spectre</p>
+                <div class="price-tag">Starts at ₱23,500,000</div>
+            </div>
+            <div class="model-item">
+                <img src="./Q1ProjICT_files/Rolls-Royce-Wraith-Background-PNG-Image.png" alt="Wraith">
+                <p>Wraith</p>
+                <div class="price-tag">Starts at ₱19,500,000</div>
+            </div>
+            <div class="model-item">
+                <img src="./Q1ProjICT_files/8a06b82de9392212406beaa169c45ba9x.jpg" alt="Cullinan">
+                <p>Cullinan</p>
+                <div class="price-tag">Starts at ₱22,300,000</div>
+            </div>
+        </div>
+
+        <p class="credit-info">Submitted by Nathaniel Anthony R. Tiongson</p>
+        <footer>
+            <p>© 2024 Rolls Royce | The Spirit of Ecstasy</p>
+        </footer>
+    </div>
+
+
+
+</body></html>
